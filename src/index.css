@@ -1,13 +1,50 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Poppins';
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image:linear-gradient(rgba(0, 0, 0, .6),rgba(0, 0, 0, .6)),url('fundo.jpg');
+  background-size: cover;
+}
+
+.navbar{
+  position: absolute;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+.navbar a{
+  color: #fff;
+}
+
+.navbar .logo{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.navbar .nav-links ul{
+  display: flex;
+}
+
+.navbar .nav-links ul li{
+  margin: 0 25px;
+
+}
+
+.navbar .nav-links ul li.active a{
+  color: #cd3c57;
+  font-weight: 600;
 }

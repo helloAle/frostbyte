@@ -48,3 +48,22 @@ header {
   color: #cd3c57;
   font-weight: 600;
 }
+
+.navbar .menu-hamburguer{
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  width: 35px;
+}
+
+@media screen and (max-width:900px) {
+  .navbar .menu-hamburguer{
+    display: block;
+  }
+
+  .nav-links{
+    position: absolute;
+    display: flex;
+  }
+}
